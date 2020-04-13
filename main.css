@@ -19,7 +19,7 @@ body{
 }
 .tab-container{
     background-color: #ffffff;
-    height: 15vh;
+    height: 8vh;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -55,6 +55,7 @@ body{
     font-size: 2.5rem;
     line-height: 3rem;
     font-family: 'Lato', sans-serif;
+    color: #ffffff;
 }
 .search-form-cont{
     position: relative;
@@ -73,8 +74,9 @@ body{
 .radio-item {
     display: inline-block;
     position: relative;
-    padding: 0 26px;
-    margin: 10px 0 0;
+    padding: 0 30px;
+    margin: 30px 0 0;
+    font-size: 2rem;
   }
   .radio-item input[type='radio'] {
     display: none;
@@ -97,12 +99,30 @@ body{
   }
   .radio-item input[type=radio]:checked + label:after {
     border-radius: 15px;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     position: absolute;
-    top: 4px;
-    left: 22px;
+    top: 12px;
+    left: 38px;
     content: " ";
     display: block;
-    background: #0770e3;
+    background: #e3d607;
+  }
+  .input-wrapper{
+      margin-top: 50px;
+  }
+  .input-group input[type=text]{
+      width: 90vw;
+      margin-bottom: 5px;
+  }
+  label{
+      display: block;
+  }
+  .input-group input[type=chexbox]{
+    display: block;
+  }
+  @media screen and (min-width: 767px){
+    .info-paragraph{
+        
+    } 
   }
