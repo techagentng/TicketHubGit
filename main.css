@@ -39,6 +39,7 @@ body{
     font-size: 2.5rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    font-family: 'Heebo', sans-serif;
 }
 .tab-container a:active{
     background-color;
@@ -54,8 +55,8 @@ body{
 .info-paragraph{
     font-size: 2.5rem;
     line-height: 3rem;
-    font-family: 'Lato', sans-serif;
     color: #ffffff;
+    font-family: 'Mallanna', sans-serif;
 }
 .search-form-cont{
     position: relative;
@@ -117,6 +118,7 @@ body{
   }
   label{
       display: block;
+      font-family: 'Mallanna', sans-serif;
   }
   .input-group input[type=chexbox]{
     display: block;
