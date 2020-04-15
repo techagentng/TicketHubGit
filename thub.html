@@ -9,24 +9,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Mallanna&display=swap" rel="stylesheet">
 <script src="fullpage.min.js" ></script>
 <link rel="stylesheet" href="fullpage.min.css">
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
 <link rel="stylesheet" href="./resset.css">
 <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 <!-- Desktop wrapper -->
-<header>
 
-</header>
 <div class="grid-wrapper">
+ 
   <div class="top-info">
-    <p class="info-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae dicta omnis obcaecati sapiente adipisci eveniet beatae molestias, dolorum placeat laboriosam corporis at fugiat ad velit, ipsam alias illo perspiciatis?</p>
+    <p class="info-paragraph">COVID-19 (Coronavirus) may impact your travel plans. Wherever you're going, you'll find the latest advice here.</p>
   </div>
   <div class="user-container">
-    <img src="logo.png" alt="">
+    <img src="logo.png" class="logo" alt="">
      <div class="user">
-       <span class="user-content" style="color: blue;font-size: 2.5rem;">EN</span>
-       <span class="user-content" style="color: blue;font-size: 2.5rem;><img src="ng.png" alt="">NGN (₦)</span>
+       <img src="ng.png" alt="">
        <span class="user-content"><i class="fa fa-user"></i></span>
      </div> 
   </div>
@@ -38,37 +35,60 @@
   <div class="search-form-cont">
     
         <div class="search-area">
-            <div class="radio-item">
-              <input type="radio" id="ritema" name="ritem" value="ropt1">
-              <label for="ritema">Return</label>
-            </div>
           
-            <div class="radio-item">
-              <input type="radio" id="ritemb" name="ritem" value="ropt2">
-              <label for="ritemb">One way</label>
-            </div>
-
-            <div class="radio-item">
-              <input type="radio" id="ritemc" name="ritem" value="ropt2">
-              <label for="ritemc">Multi-city</label>
-            </div>
-
-           <div class="input-wrapper">
-                <div class="input-group">
-                  <label for="ritemc">From</label>
-                  <input type="text" class="form-control" id="ritemd" placeholder="pop up a modal task schedule">
-                  <input type="checkbox" id="ritemd"><span>Add nearby airport</span>
+              <!-- flex item1 -->
+                <div class="radio-item">
+                  <input type="radio" id="ritema" name="ritem" value="ropt1">
+                  <label for="ritema">Return</label>
                 </div>
-
-                <div class="input-group">
-                  <label for="ritemc">To</label>
-                  <input type="text" class="form-control" placeholder="pop up a modal task schedule">
-                  <input type="checkbox" id="ritemd"><span>Add nearby airport</span>
+              <!-- flex item2 -->
+                <div class="radio-item">
+                  <input type="radio" id="ritemb" name="ritem" value="ropt2">
+                  <label for="ritemb">One way</label>
                 </div>
+              <!-- flex item3 -->
+                <div class="radio-item">
+                  <input type="radio" id="ritemc" name="ritem" value="ropt2">
+                  <label for="ritemc">Multi-city</label>
+                </div>
+              <!-- flex item4 -->
+              <div class="form-wrapper">
+                  <div class="from">
+                    <label for="from">From</label>
+                    <input type="text" class="input-class" id="from">
+                    <input type="checkbox" name="" id=""><span> Direct flights only</span>
+                  </div>
 
-               
-           </div>
-                         
+                  <button class="input-button"><i style="color:#ee5e08" class="fa fa-random"></i></button> 
+                  
+                  <div class="from">
+                    <label for="to">To</label>
+                    <input type="text" class="input-class" id="to">
+                    <input type="checkbox" name="" id="to"><span> Add nearby airports</span>
+                  </div> 
+              </div> 
+              <div class="date-container">
+                  <div class="date">
+                    <span>Department</span>
+                    <input type="date" name="" class="input-class" id="">
+                  </div>
+
+                 <div class="date">
+                   <span>Return</span>
+                   <input type="date" name=" " class="input-class" id="">
+                 </div>
+              </div>
+                  <div class="cabin">
+                    <div class="text">
+                      <span>Cabin Class & Travellers</span>
+                      <input type="text" class="input-class">
+                      <input type="checkbox" name="" id=""><span>Direct flights only</span>
+                    </div>           
+                      <div class="search-flight">
+                        <a href="" class="search-button">SEARCH FLIGHTS <i class="fa fa-arrow-right"></i></a>
+                      </div>
+                  </div> 
+                                    
             </div>
         </div>
   </div>
