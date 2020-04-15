@@ -22,7 +22,6 @@ body{
   line-height: 1.5vh;
   color: #ffffff;
   font-family: 'Mallanna', sans-serif;
-  font-weight: 400;
   text-align: justify;
 }
 .tab-container{
@@ -30,16 +29,13 @@ body{
     height: 25px;
     display: flex;
     justify-content: space-around;
-    width: 100%;
 }
-.tab-container .tab{
-  margin-top: 5px;
-}
+.tab-container img{}
+
 .tab-container a{
     color: #ffffff;
     background-color: #ee5e08;
-    padding: 5px 15px;
-    height: 2rem;
+    padding: 25px 25px;
     font-size: 1rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -47,11 +43,12 @@ body{
     text-decoration: none;
     box-shadow: inset 0 0 0 1px #ee5e08;
     }
-.user{
-    display: inline;
-    padding-right: 20px;
-    font-size: 3rem;
-
+.logo-content{
+  width: 3rem;
+  height: 3rem;
+}
+.inline{
+  display: flex;
 }
 .search-form-cont{
     position: relative;
@@ -64,8 +61,13 @@ body{
     height: 300px;
 }
 .user-container{
+    display: flex;
+    justify-content: space-between;
     background-color:#ffffff;
     height: 45px;
+  }
+  .user-container img{
+    width: 3rem;
   }
 /* dont forget to remove the display for a seamless grid */
 .radio-item {
@@ -190,51 +192,30 @@ body{
   .logo{
     width: 40px;
   }
- /* while growing, at 500px or higher, display red*/
-  @media screen and (min-width: 786px){
+ /* while reducing to 786px, display red--for regular mobile phone*/
+  @media screen and (min-width: 768px){
     .info-paragraph{
       color: white;
-      font-size: 3rem;
-    }
-  }
-  @media screen and (max-width: 414px){
-    .info-paragraph{
-      color: ;
-      font-size: 24px;
-    }
-  }
-   
-    /* .top-info{
-      display: block;
-    }
-    .logo{
-      display: block;
-    }
-    .user-container{
-      display: block;
+      font-size: 2.855rem;
+      line-height: 3rem;
+      font-family: 'Mallanna', sans-serif;
+      font-weight: 900;
     }
     .tab-container{
-      display: block;
+      display: flex;
+      height: 100px;
+      text-align: center;
+      max-width: 70%;
     }
-    .search-form-cont{
-      display: block;
-    } */
-}
-@media screen and (min-width: 679px){
-  /* .top-info{
-    display: none;
+    .tab-container .tab{
+      height: 60px;
+      padding: 25px 45px;
+      font-size: 2.5rem;
+      justify-items:flex-start;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
   }
-  .logo{
-    display: none;
-  }
-  .user-container{
-    display: none;
-  }
-  .tab-container{
-    display: none;
-  }
-  .search-form-cont{
-    display: none;
-  } */
-}
+  
+   
   
