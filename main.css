@@ -201,19 +201,18 @@ body{
       font-family: 'Mallanna', sans-serif;
       font-weight: 900;
     }
+    .tab-container a{
+      height: 60px;
+      padding: 15px 25px;
+      font-size: 2.5rem;
+      border-top-left-radius: 23px;
+      border-top-right-radius: 23px;
+    }
     .tab-container{
       display: flex;
-      height: 100px;
+      height: 120px;
       text-align: center;
-      max-width: 70%;
-    }
-    .tab-container .tab{
-      height: 60px;
-      padding: 25px 45px;
-      font-size: 2.5rem;
-      justify-items:flex-start;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+      justify-content: center;
     }
   }
   
