@@ -12,23 +12,39 @@ body{
     width: 100vw;
 }
 .top-info{
-    background: radial-gradient(circle, rgba(237,93,26,1) 0%, rgba(60,15,15,1) 100%);
-    padding: 40px;
-    color: aliceblue;  
-    font-size: 2vw;
-}
-.info-paragraph{
-  font-size: 4vw;
-  line-height: 1.5vh;
-  color: #ffffff;
-  font-family: 'Mallanna', sans-serif;
-  text-align: justify;
+     
+    display: none;
+  }
+  .desk-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:#ffffff; 
+    width: 100%;
+    font-style: normal;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ee5e08;
+    height: 65px;
+  }
+  .desk-info p{
+    padding-top: 22px;
+  }
+  .tab{
+    color:  #ffffff;
+    font-size: 1rem; 
+    font-family:"Heebo", Sans-serif;
+    background-color: #E16223;
+  }
+.top-info p{
+  font-size: 2rem;
+  background-color: #ee5e08;
 }
 .tab-container{
     background-color:#ffffff;
     height: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .tab-container a{
     color: #ffffff;
@@ -40,7 +56,7 @@ body{
     font-family: 'Heebo', sans-serif;
     text-decoration: none;
     box-shadow: inset 0 0 0 1px #ee5e08;
-    }
+  }
 .logo-content{
   width: 3rem;
   height: 3rem;
@@ -50,16 +66,17 @@ body{
 }
 .search-form-cont{
     position: relative;
-    height: 700px;
+    height: 1000px;
     background-color:#722d0b;
     padding-left: 90px;
 }
 
 .user-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color:#ffffff;
     height: 45px;
+    min-width: 768px;
   }
   .user-container img{
     width: 3rem;
@@ -104,18 +121,16 @@ body{
   }
   .form-wrapper{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 60px;
-    width: 75%;
   }
   .input-class{
     width: 100%;
-    padding: 10px 0px;
+    padding: 30px 0px;
     border-radius: 6px;
   }
  
   .from{
-    margin: 0 auto;
     flex: 2;
   }
  
@@ -130,6 +145,7 @@ body{
     border: 2px solid #000000;
     background: white;
     transition: .5s;
+    flex: 1;
   }
  .input-button:hover{
    background-color: #000000;
@@ -173,7 +189,7 @@ body{
     margin-top: 40px;
   }
   .search-button{
-    background-color: #00887d;
+    background-color: #4F6DA9;
     padding: 8px 30px;
     color: white;
     text-decoration: none;
@@ -203,8 +219,8 @@ body{
     .tab-container a{
       height: 60px;
       font-size: 2.5rem;
-      border-top-left-radius: 23px;
-      border-top-right-radius: 23px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       background-color: #E16223;
       border: 1px solid #E16223;
     }
@@ -222,9 +238,16 @@ body{
       margin-left: 95px;
     }
     .radio-box{
-      margin-left: 15%;
       margin-top: -33px;
       padding-top: 30px;
+    }
+    .form-wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+    }
+    .input-button{
+      display: none;
     }
   }
   

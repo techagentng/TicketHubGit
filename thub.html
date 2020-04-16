@@ -13,27 +13,36 @@
 <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-<!-- Desktop wrapper -->
 
 <div class="grid-wrapper">
- 
+  <!-- Flexbox start -->
+  <!-- Desktop version of top-info -->
+ <div class="desk-info"> 
+   <p class="info-text">COVID-19 (Coronavirus) may impact your travel plans. Wherever you're going, you'll find the latest advice here.</p>
+ </div>
+ <!-- Top info bar flex item 1 -->
   <div class="top-info">
     <p class="info-paragraph">COVID-19 (Coronavirus) may impact your travel plans. Wherever you're going, you'll find the latest advice here.</p>
   </div>
+  <!-- user at right hand top flex item 2 -->
   <div class="user-container">
     <img src="logo.png" class="logo-content" alt="">
-     <div class="logo-content inline">
-       <img src="ng.png" alt="">
-       <span class="user-content"><i class="fa fa-user"></i></span>
-     </div> 
+     <nav class="logo-content inline">
+       <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </nav> 
   </div>
+  <!-- box class holding 3 core menu tabs, flexed. item 3 -->
       <div class="box">
         <div class="tab-container">
-          <a href="" class="tab">Fights</a>
-          <a href="" class="tab">Hotel</a>
-          <a href="" class="tab">Car Hire </a>
+          <a href="" class="tab"><i class="fa fa-plane"></i> Fights</a>
+          <a href="" class="tab"><i class="fa fa-calendar"></i> Events</a>
+          <a href="" class="tab"><i class="fa fa-hotel"></i> Hotels</a>
       </div>
-  </div>
+      </div>
   
   <div class="search-form-cont">
     
@@ -56,16 +65,16 @@
               </div>
           </div>
                 <!-- flex item4 -->
-              <div class="form-wrapper">
+              <div class="form-wrapper wrap-desk">
                   <div class="from">
-                    <label for="from">From</label>
+                    <label for="from from-desk">From</label>
                     <input type="text" class="input-class" id="from">
                     <input type="checkbox" name="" id=""><span> Direct flights only</span>
                   </div>
 
-                  <button class="input-button"><i style="color:#ee5e08" class="fa fa-random"></i></button> 
+                  <button class="input-button input-desk"><i style="color:#ee5e08" class="fa fa-random"></i></button> 
                   
-                  <div class="from">
+                  <div class="from from-desk">
                     <label for="to">To</label>
                     <input type="text" class="input-class" id="to">
                     <input type="checkbox" name="" id="to"><span> Add nearby airports</span>
@@ -96,7 +105,7 @@
             </div>
         </div>
   </div>
-</div>
+
 
 
 
