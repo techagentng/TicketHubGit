@@ -11,51 +11,37 @@ body{
 .grid-wrapper{
     width: 100vw;
 }
+.box{
+  
+}
 .top-info{
-     
-    display: none;
-  }
-  .desk-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color:#ffffff; 
-    width: 100%;
-    font-style: normal;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #ee5e08;
-    height: 65px;
-  }
-  .desk-info p{
-    padding-top: 22px;
-  }
-  .tab{
-    color:  #ffffff;
-    font-size: 1rem; 
-    font-family:"Heebo", Sans-serif;
+    padding-top:39px;
     background-color: #E16223;
+    height: 60px;
   }
 .top-info p{
-  font-size: 2rem;
-  background-color: #ee5e08;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: auto 100%;
+  color: #ffffff;
 }
 .tab-container{
     background-color:#ffffff;
-    height: 25px;
+    height: 55px;
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
 }
 .tab-container a{
     color: #ffffff;
     background-color: #ee5e08;
-    padding: 25px 30px;
+    margin-right: 1rem;
     font-size: 1rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-family: 'Heebo', sans-serif;
     text-decoration: none;
     box-shadow: inset 0 0 0 1px #ee5e08;
+    padding: 15px 35px;
   }
 .logo-content{
   width: 3rem;
@@ -66,20 +52,23 @@ body{
 }
 .search-form-cont{
     position: relative;
-    height: 1000px;
     background-color:#722d0b;
-    padding-left: 90px;
+    width: 100vw;
+    
 }
 
 .user-container{
     display: flex;
-    justify-content: space-around;
-    background-color:#ffffff;
-    height: 45px;
-    min-width: 768px;
+    justify-content: space-between;
+    background-color:red;
+    height: 75px;
+    width: 100%;
   }
   .user-container img{
     width: 3rem;
+  }
+  .radio-box{
+    
   }
 /* dont forget to remove the display for a seamless grid */
 .radio-item {
@@ -121,35 +110,41 @@ body{
   }
   .form-wrapper{
     display: flex;
-    flex-direction: column;
-    margin-top: 60px;
+    flex-direction: row;
+    width: 100%;
+  }
+  .search-area{
+    background-color: chartreuse;
+    width: 80%;
+    margin: 0 auto;
   }
   .input-class{
-    width: 100%;
-    padding: 30px 0px;
-    border-radius: 6px;
+    padding: 20px 0px;
+    border-radius: 8px;
   }
- 
+  .info-paragraph{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 120px;
+  }
   .from{
     flex: 2;
   }
- 
+ .checkbox-container{
+   width: 70%;
+ }
+ .bg-title{
+   color: white;
+   font-size: 5rem;
+   font-weight: 700;
+ }
   label{
     color: white;
     padding: 6px 2px;
     display: block;
   }
-  .input-button{
-    height: 42px;
-    margin-top: 28px;
-    border: 2px solid #000000;
-    background: white;
-    transition: .5s;
-    flex: 1;
-  }
- .input-button:hover{
-   background-color: #000000;
- }
+
   input[type="checkbox"], span{
     display: block;
     margin-top: 10px;
@@ -166,13 +161,7 @@ body{
     padding: 6px 2px;
     display: block;
   }
-  .date{
-    flex: 2;
-    padding-right: 3px;
-  }
-  .date span{
-    padding: 6px 2px;
-  }
+  
   .cabin{
     display: flex;
     flex-direction: column;
@@ -204,13 +193,14 @@ body{
     width: 40px;
   }
  /* while reducing to 786px, display red--for regular mobile phone*/
-  @media screen and (min-width: 768px){
+  @media screen and (max-width: 768px){
     .info-paragraph{
       color: white;
-      font-size: 2.855rem;
-      line-height: 3rem;
+      font-size: 1rem;
+      line-height: 2rem;
       font-family: 'Mallanna', sans-serif;
       font-weight: 900;
+      padding: 30px;
     }
     .top-info{
       background: #e16223;
@@ -231,8 +221,9 @@ body{
       justify-content: space-around;
     }
     .box{
-      margin: 0 auto;
       width: 70%;
+      height: 90px;
+      margin: 0 auto;
     }
     .search-area{
       margin-left: 95px;
