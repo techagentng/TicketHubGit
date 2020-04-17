@@ -7,12 +7,13 @@ body{
     font-family: 'Poppins', sans-serif;
     color:#555;
     font-weight: 700;
+    overflow-x: hidden;
 }
 .grid-wrapper{
     width: 100vw;
 }
 .box{
-  
+  padding-bottom: 20px;
 }
 .top-info{
     padding-top:39px;
@@ -27,9 +28,9 @@ body{
 }
 .tab-container{
     background-color:#ffffff;
-    height: 55px;
+    height: 5px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .tab-container a{
     color: #ffffff;
@@ -50,13 +51,21 @@ body{
 .inline{
   display: flex;
 }
-.search-form-cont{
-    position: relative;
-    background-color:#722d0b;
-    width: 100vw;
-    
-}
 
+.search-form-cont {
+  background-image: url("app_bg.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 60vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  padding-top: 100px;
+  margin-top: 20px;
+  width: 100vw;
+}
+.box{
+  margin-top: 15px;
+}
 .user-container{
     display: flex;
     justify-content: space-between;
@@ -67,9 +76,7 @@ body{
   .user-container img{
     width: 3rem;
   }
-  .radio-box{
-    
-  }
+
 /* dont forget to remove the display for a seamless grid */
 .radio-item {
     display: inline-block;
@@ -111,16 +118,20 @@ body{
   .form-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
   }
   .search-area{
     background-color: chartreuse;
     width: 80%;
     margin: 0 auto;
+    border-radius: 9px;
+    
   }
   .input-class{
-    padding: 20px 0px;
-    border-radius: 8px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    border: 1px solid #e16223;
   }
   .info-paragraph{
     color: white;
@@ -133,18 +144,24 @@ body{
   }
  .checkbox-container{
    width: 70%;
+   padding-left: 17px;
  }
  .bg-title{
    color: white;
-   font-size: 5rem;
+   font-size: 2.37rem;
    font-weight: 700;
+   margin-left: 170px;
+   margin-bottom: -20px;
+ }
+ .wrap-search-area{
+   margin-top: 30px;
  }
   label{
     color: white;
     padding: 6px 2px;
     display: block;
   }
-
+ 
   input[type="checkbox"], span{
     display: block;
     margin-top: 10px;
