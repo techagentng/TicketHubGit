@@ -65,13 +65,20 @@ body{
 }
 .box{
   margin-top: 15px;
+  padding-left: 200px;
+}
+.logo{
+  margin-left: 20px;
+  height: 3rem;
+  top: 12px;
+  position: relative;
 }
 .user-container{
     display: flex;
     justify-content: space-between;
-    background-color:red;
     height: 75px;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
   .user-container img{
     width: 3rem;
@@ -209,6 +216,48 @@ body{
   .logo{
     width: 40px;
   }
+
+  section{
+    margin: 0 auto;
+    width: 65%;
+    padding: 2rem;
+  }
+  .flex-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 4px 60px;
+  }
+  .grid-container{
+    display: grid;
+    padding: 2rem;
+    grid-gap: 2rem;
+    grid-template-columns: auto 25% 25%;
+    padding-top: 0;
+  }
+  .s-1{
+    border-radius: .3rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1 );
+  }
+ .box-content{
+   margin-left: 10px;
+   text-align: inherit;
+   padding-top: 340px;
+   overflow: hidden;
+ }
+  .search-text{
+    color: red;
+  }
+  .grid1, .grid2, .grid3{
+    background-image: url("./b.PNG"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  
  /* while reducing to 786px, display red--for regular mobile phone*/
   @media screen and (max-width: 768px){
     .info-paragraph{
