@@ -44,16 +44,50 @@ body{
     box-shadow: inset 0 0 0 1px #ee5e08;
     padding: 15px 35px;
   }
-.logo-content{
-  width: 3rem;
-  height: 3rem;
-}
-.inline{
+  .tab-container a:hover{
+     background-color: #4F6DA9;
+     box-shadow: inset 0 0 0 1px #4F6DA9;;
+  }
+  .tab-container a:active{
+    background-color: #4F6DA9;
+    box-shadow: inset 0 0 0 1px #4F6DA9;;
+ }
+.logo-content ul{
   display: flex;
+  flex-direction: row;
 }
-
+.logo-content{
+  margin-top: 15px;
+}
+.nav-pane-img{
+    height: .75rem;
+    margin-right: .25em;
+    margin-left: .5em;
+    border: 1px solid #dddde5;
+    box-sizing: content-box;
+}
+.div-for-button{
+  display: flex;
+  align-items: center;
+  color: #444560;
+  font-size: .75rem;
+  font-weight: 400;
+}
+.logo-content ul li span{
+  display: inline;
+  font-size: .7rem;
+  color: #02122c;
+  padding: .375rem 1.125rem;
+  border: 0;
+  border-radius: .25rem;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
 .search-form-cont {
-  background-image: url("app_bg.jpg"); /* The image used */
+  background-image: url("../img/app_bg.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 60vh; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -83,7 +117,83 @@ body{
   .user-container img{
     width: 3rem;
   }
-
+/* Currency modal @ menu */
+.currency-parent-modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6 );
+}
+.currency-modal-content{
+  display: block;
+  background-color: whitesmoke;
+  margin: 10% auto;
+  padding: 20px;
+  width: 23%;
+  height: 450px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2 ),0 7px 20px 0 rgba(0, 0, 0, 0.17 );
+  border-radius: 9px;
+}
+.close-btn{
+  color: #ccc;
+  float: right;
+  font-size: 2rem;
+}
+.h4spanwrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+coun span{
+  color: #4F6DA9;
+}
+.close-btn:hover, .close-btn:focus{
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.currency-modal-flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+.text{
+  font-size: 1.5rem;
+}
+.modal-input-box span{
+  display: block;
+  margin-bottom: 10px;
+  color: #3c3b3b;
+}
+.country p{
+  font-size: .5rem;
+}
+.modal-input-style{
+  width: 100%;
+  padding: 8px 1px;
+}
+.modal-input-box{
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+.region-text{
+  color: #3c3b3b;
+}
+.col-12{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.grid-for-trips{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
 /* dont forget to remove the display for a seamless grid */
 .radio-item {
     display: inline-block;
@@ -108,16 +218,16 @@ body{
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    border: 4px solid #000000;
+    border: 4px solid #4F6DA9;;
     background-color: #ee5e08;
   }
   .radio-item input[type=radio]:checked + label:after {
     border-radius: 15px;
-    width: 21px;
-    height: 21px;
+    width:  11px;
+    height: 11px;
     position: absolute;
-    top: 11px;
-    left: 6px;
+    top: 17px;
+    left: 8px;
     content: " ";
     display: block;
     background: #000000;
@@ -125,7 +235,7 @@ body{
   .form-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
   .search-area{
@@ -133,12 +243,9 @@ body{
     width: 80%;
     margin: 0 auto;
     border-radius: 9px;
-    
   }
   .input-class{
     padding: 15px 0px;
-    border-radius: 5px;
-    border: 1px solid #e16223;
   }
   .info-paragraph{
     color: white;
@@ -151,7 +258,7 @@ body{
   }
  .checkbox-container{
    width: 70%;
-   padding-left: 17px;
+   padding-left: 180px;
  }
  .bg-title{
    color: white;
@@ -171,14 +278,11 @@ body{
   }
  
   input[type="checkbox"], span{
-    display: block;
-    margin-top: 10px;
     color: white;
     font-size: 1rem;
   }
   .date-container{
     display: flex;
-    margin-top: 30px;
     width: 75%;
   }
   .date-container label{
@@ -199,8 +303,9 @@ body{
     align-items: flex-start;
   }
   .search-flight{
-    margin-left: 70px;
-    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .search-button{
     background-color: #4F6DA9;
@@ -306,7 +411,7 @@ body{
     color: red;
   }
   .grid1, .grid2, .grid3{
-    background-image: url("./bb.PNG"); /* The image used */
+    background-image: url("../img/bb.PNG"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     height: 40vh;
@@ -363,8 +468,8 @@ body{
   .basic-slide + label {
     position: absolute;
     top: 0;
-    margin-top: 39px;
-    margin-left: 374px;
+    margin-top: 29px;
+    margin-left: 373px;
     padding: 14px 15px;
     text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
     background: #ee5e08;
@@ -386,7 +491,7 @@ body{
 }
 .basic-slide:focus + label,
 .basic-slide:active + label {
-  transform: translateX(-100%);
+  transform: translateX(-96.5%);
 }
 .div-box-right{
   background-color: #e16223;
@@ -394,14 +499,24 @@ body{
   min-width: 320px;
 }
 .div-box-right ul{
-  margin-top: 60px;
+  margin-left: 50px;
 }
 .div-box-right ul li{
   display: inline;
 }
 .h3-right-text{
   color: white;
-  padding-top: 20px;
+  padding-top: 10px;
+  line-height: 1rem;
+}
+.cover-button{
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  transition: .14s;
+  transition-property: border;
+}
+.cover-button:hover{
+  border: 1.5px solid #E16223;
 }
 
  /* while reducing to 786px, display red--for regular mobile phone*/

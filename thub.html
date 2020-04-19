@@ -7,13 +7,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Mallanna&display=swap" rel="stylesheet">
-<script src="fullpage.min.js" ></script>
-<link rel="stylesheet" href="fullpage.min.css">
-<link rel="stylesheet" href="./resset.css">
-<link rel="stylesheet" href="./main.css">
-<link href="./hover.css" rel="stylesheet" media="all">
-</head>
-<body>
+  <link rel="stylesheet" href="./css/resset.css">
+  <link href="./css/hover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
 
 <div class="grid-wrapper">
   <!-- Flexbox start -->
@@ -23,14 +21,48 @@
   </div>
   <!-- user at right hand top flex item 2 -->
   <div class="user-container">
-    <img src="logo.png" class="logo" alt="Ticjethub logo">
-     <nav class="logo-content inline">
+    <img src="./img/logo.png" class="logo" alt="Tickethub logo">
+     <nav class="logo-content" id="currency-nav">
        <ul>
-         <li></li>
-         <li>NG</li>
+        
+         <li><button class="cover-button"><div class="div-for-button">
+           <span class="nav-pane">English(UK)</span>
+           <span class="nav-pane">Nigeria</span>
+           <img src="https://images.skyscnr.com/images/country/flag/header/ng.png" class="nav-pane-img" alt="">
+           <span class="nav-pane">₦ NGN</span>
+           <span class="nav-pane">NGN (Naira))</span>
+         </div></button></li>
          <li></li>
        </ul>
      </nav> 
+  </div>
+  <!-- Modal pop-up language-select-menu  -->
+  <div class="currency-parent-modal" id="parent-modal">
+    <div class="currency-modal-content">
+      <div class="h4spanwrapper">
+        <h4 class="region-text" id="region-text"> Regional settings</h4>
+        <span class="close-btn" id="close-btn">&times;</span>
+      </div>
+        <div class="currency-modal-flex-container">
+          <div class="language modal-input-box">
+            <span><i class="fa fa-commenting"></i> Language</span>
+            <input type="text" class="modal-input-style">
+          </div>
+          <div class="country modal-input-box">
+            <span><i class="fa fa-globe"></i> Country /Region</span>
+            <p class="text">Selecting the country you’re in will give you local deals <br>and information.</p>
+            <input type="text" class="modal-input-style">
+          </div>
+          <div class="currency-type modal-input-box">
+            <span><i class="fa fa-eur"></i> Currency</span>
+            <input type="text" class="modal-input-style">
+          </div>
+          <button type="submit" class="save-modal-btn">Save</button>
+          <button type="submit" type="cancel-modal-btn">Cancel</button>
+        </div>
+      </div>
+    
+    </div>
   </div>
   <!-- box class holding 3 core menu tabs, flexed. item 3 -->
       <div class="box">
@@ -68,44 +100,48 @@
                           </div>
                       </div>
                       <!-- Form wrpper with flex display -->
-                    <div class="form-wrapper">
-                      <div class="s-item">
-                        <label for="from">From</label>
-                        <input type="text" class="input-class" placeholder="Lagos LOS" id="from">
-                        <input type="checkbox" name="" id=""><span> Direct flights only</span>
-                      </div> 
-                               <!-- TO -->
-                      <div class="s-item">
-                        <label for="to">To</label>
-                        <input type="text" class="input-class" placeholder="Country, city or airport"  id="to">
-                        <input type="checkbox" name="" id="to"><span> Add nearby airports</span>
-                      </div> 
+                          <div class="form-wrapper">
+                            <div class="s-item">
+                              <label for="from">From</label>
+                              <input type="text" class="input-class" placeholder="Lagos LOS" id="from">
+                              <!-- <input type="checkbox" name="" id=""><span> Direct flights only</span> -->
+                            </div> 
+                            <!-- TO -->
+                            <div class="s-item">
+                              <label for="to">To</label>
+                              <input type="text" class="input-class" placeholder="Country, city or airport"  id="to">
+                              <!-- <input type="checkbox" name="" id="to"><span> Add nearby airports</span> -->
+                            </div> 
 
-                              <!-- Department -->
-                    <div class="s-item">
-                        <div class="date">
-                          <span>Department</span>
-                          <input type="date" name="" class="input-class" id="">
+                            <!-- Department -->
+                            <div class="s-item">
+                              <label for="to">Depart</label>
+                              <input type="text" class="input-class" placeholder="18/04/2020"  id="to">
+                              <!-- <input type="checkbox" name="" id="to"><span> Add nearby airports</span> -->
+                            </div>    
+                            <!-- Return -->
+                            <div class="s-item">
+                              <label for="to">Return</label>
+                              <input type="date" class="input-class" placeholder="25/04/2020"  id="date">
+                              <!-- <input type="checkbox" name="" id="to"><span> Add nearby airports</span> -->
+                            </div> 
+                            <!-- Cabin class travellers -->
+                            <div class="s-item">
+                              <label for="to">Cabin Class & Travellers</label>
+                              <input type="text" class="input-class" placeholder="Country, city or airport"  id="to">
+                              <!-- <input type="checkbox" name="" id="to"><span> Add nearby airports</span> -->
+                            </div> 
+                              <div>
+                                
+                              </div>
                         </div>
-                    </div>
-                <!-- Return -->
-                    <div class="s-item">
-                      <span>Return</span>
-                      <input type="date" name=" " class="input-class" id="">
-                    </div>
-                    <!-- Cabin class travellers -->
-                    <div class="s-item">
-                        <div class="text">
-                            <span>Cabin Class & Travellers</span>
-                            <input type="text" class="input-class">
-                            <input type="checkbox" name="" id=""><span>Direct flights only</span>
-                        </div>          
-                    </div> 
-                    
-              </div>
-              <div class="search-flight">
-                <a href="" class="search-button">SEARCH FLIGHTS <i class="fa fa-arrow-right"></i></a>
-              </div>
+                        <div class="search-flight">
+                          <div class="two-rad">
+                            <input type="checkbox" name="" id="to"><span> Add nearby airports</span>
+                            <input type="checkbox" name="" id="to"><span> Add nearby airports</span>
+                          </div>
+                          <a href="" class="search-button">SEARCH FLIGHTS <i class="fa fa-arrow-right"></i></a>
+                        </div>
               </div>
                                                    
             </div>
@@ -189,6 +225,121 @@
           </div>
       </section>
 
+      <!-- Plan trip 3 column grid -->
+      <section>
+        <div class="col-12">
+          <h4>Plan your perfect trip</h4>
+          <p>Search Flights, Hotels & Car Hire to our most popular destinations</p>
+        </div>
+          <div class="grid-for-trips">
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>London</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>Caira</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>Johannesburg</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>Chicago</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>Lagos</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>New York</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>Houston</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>Whashinton</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column-1">
+              <img src="" alt="">
+              <div class="img-right-side">
+                <h5>Dubai</h5>
+                <ul class="cat-list">
+                  <li><a href="#">Flights .</a></li>
+                  <li><a href="#">Events .</a></li>
+                  <li><a href="#">Hotels .</a></li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+
       <!-- This line of code is the blue bg before footer -->
       <section class="footer">
         <div class="subscribe">
@@ -239,6 +390,7 @@
 
 
 <!-- partial -->
+  <script src="./js/modals.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script><script  src="./script.js"></script>
 
