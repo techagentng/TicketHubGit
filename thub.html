@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
-  <title>TicketBooking</title>
+  <title>Tickethub</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Mallanna&display=swap" rel="stylesheet">
@@ -46,19 +47,19 @@
         <div class="currency-modal-flex-container">
           <div class="language modal-input-box">
             <span><i class="fa fa-commenting"></i> Language</span>
-            <input type="text" class="modal-input-style">
+            <input type="text" class="modal-input-style" placeholder="English (United Kingdom)">
           </div>
           <div class="country modal-input-box">
             <span><i class="fa fa-globe"></i> Country /Region</span>
             <p class="text">Selecting the country you’re in will give you local deals <br>and information.</p>
-            <input type="text" class="modal-input-style">
+            <input type="text" class="modal-input-style" placeholder="Nigeria">
           </div>
           <div class="currency-type modal-input-box">
             <span><i class="fa fa-eur"></i> Currency</span>
-            <input type="text" class="modal-input-style">
+            <input type="text" class="modal-input-style" placeholder="NG - (₦)">
           </div>
           <button type="submit" class="save-modal-btn">Save</button>
-          <button type="submit" type="cancel-modal-btn">Cancel</button>
+          <button type="submit" class="cancel-modal-btn">Cancel</button>
         </div>
       </div>
     
@@ -66,12 +67,11 @@
   </div>
   <!-- box class holding 3 core menu tabs, flexed. item 3 -->
       <div class="box">
-        <div class="tab-container">
+         <div class="tab-container">
           <a href="" class="tab"><i class="fa fa-plane"></i> Fights</a>
           <a href="" class="tab"><i class="fa fa-calendar"></i> Events</a>
           <a href="" class="tab"><i class="fa fa-hotel"></i> Hotels</a>
-      </div>
-      
+         </div>
       </div>
   <!-- This container holdes the search pane -->
   <div class="search-form-cont">
@@ -137,10 +137,11 @@
                         </div>
                         <div class="search-flight">
                           <div class="two-rad">
-                            <input type="checkbox" name="" id="to"><span> Add nearby airports</span>
+                            <input type="checkbox" class="rad2" name="" id="to"><span> Add nearby airports</span>
+                            <input type="checkbox" class="rad1" name="" id="to"><span> Direct flights only</span><br>
                             <input type="checkbox" name="" id="to"><span> Add nearby airports</span>
                           </div>
-                          <a href="" class="search-button">SEARCH FLIGHTS <i class="fa fa-arrow-right"></i></a>
+                          <a href="" class="search-button">SEARCH FLIGHTS <i class="fa fa-plane"></i></a>
                         </div>
               </div>
                                                    
@@ -341,11 +342,11 @@
       </section>
 
       <!-- This line of code is the blue bg before footer -->
-      <section class="footer">
+      <footer class="footer">
         <div class="subscribe">
           <h1>Join our news letter</h1>
           <span>
-            <input class="basic-slide" id="class" type="text" placeholder="Enter your email" /><label for="class">Go</label>
+            <input class="basic-slide" id="class" type="text" placeholder="Enter your email" />
           </span>
         </div>
         <div class="footer1-div">
@@ -385,7 +386,7 @@
           </ul>
         </div>
         </div>
-      </section>
+      </footer>
     
 
 
