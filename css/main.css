@@ -572,11 +572,24 @@ coun span{
 
  /* while reducing to 786px, display red--for regular mobile phone*/
   @media screen and (max-width: 768px){
+    .search-text{
+      display: none;
+    }
+    .flex-header2{
+      display: grid;
+      grid-template-rows: 1fr;
+      width: 60%;
+      margin-top: -30px;
+      margin-left: 25px;
+    }
+    .bind{
+      display: none;
+    }
     .search-button-cont-desk{
       display: none;
     }
     .grid-container{
-      margin-top: 195px;
+      margin-top: 145px;
     }
     .flex-header h3{
       font-size: 1rem;
@@ -638,6 +651,7 @@ coun span{
     
     .wrap-search-area {
       margin-top: 1px;
+      width: 98;
   }
     .radio-item{
       font-size: .6rem;
