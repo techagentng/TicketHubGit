@@ -53,7 +53,6 @@ body{
   margin-top: 15px;
 }
 .nav-pane-img{
-    height: .75rem;
     margin-right: .25em;
     margin-left: .5em;
     border: 1px solid #dddde5;
@@ -65,12 +64,17 @@ body{
   color: #444560;
   font-size: .75rem;
   font-weight: 400;
+  padding-top: -10px;
+}
+.double-input{
+  display: flex;
+  flex-direction: row;
 }
 .logo-content ul li span{
   display: inline;
   font-size: .7rem;
   color: #02122c;
-  padding: .375rem 1.125rem;
+  padding: 0rem .5rem;
   border: 0;
   border-radius: .25rem;
   cursor: pointer;
@@ -116,7 +120,7 @@ body{
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 0;
+  top: 0px;
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6 );
@@ -125,9 +129,9 @@ body{
   display: block;
   background-color: whitesmoke;
   margin: 10% auto;
-  padding: 20px;
-  width: 23%;
-  height: 450px;
+  padding: 10px 13px;
+  width: 27%;
+  height: 550px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2 ),0 7px 20px 0 rgba(0, 0, 0, 0.17 );
   border-radius: 9px;
 }
@@ -139,7 +143,7 @@ body{
 .h4spanwrapper{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0;
 }
 coun span{
@@ -153,9 +157,9 @@ coun span{
 .currency-modal-flex-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
   width: 100%;
+  margin-top: 0;
 }
 .save-modal-btn{
   background-color: #4F6DA9;
@@ -217,6 +221,7 @@ coun span{
   padding: 0;
 }
 .region-text{
+  margin-top: 10px;
   color: #3c3b3b;
 }
 .col-12{
@@ -276,11 +281,10 @@ coun span{
     background-color: #062369;
     width: 80%;
     margin: 0 auto;
-    border-radius: 9px;
     height: 15rem;
   }
   .input-class{
-    padding: 15px 0px;
+    padding: 6px 0px;
   }
   .info-paragraph{
     color: white;
@@ -316,6 +320,7 @@ coun span{
   input[type="checkbox"], span{
     color: white;
     font-size: 1rem;
+    margin-top: 1rem;
   }
   .date-container{
     display: flex;
@@ -353,12 +358,17 @@ coun span{
     margin-bottom: 12px;
     margin-left: 20px;
   }
-  .rad2{
-    
+
+  .search-button-cont{
+    display: none;
+  }
+  .search-button-cont-desk{
+    margin-top: 2px;
+    float: right;  
   }
   .search-button{
     background-color: #E16223;
-    padding: 17px 30px;
+    padding: 10px 15px;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -376,10 +386,6 @@ coun span{
     margin: 0 auto;
     
     padding: 1rem;
-  }
-
-  .flex-header{
-  
   }
   .flex-header h3{
     font-size: 1.454rem;
@@ -566,11 +572,75 @@ coun span{
 
  /* while reducing to 786px, display red--for regular mobile phone*/
   @media screen and (max-width: 768px){
+    .search-button-cont-desk{
+      display: none;
+    }
+    .grid-container{
+      margin-top: 195px;
+    }
+    .flex-header h3{
+      font-size: 1rem;
+      color: white;
+      line-height: 1.876rem;
+      padding-left: 28px;
+    }
+    .flex-header a{
+      padding-left: 28px;
+    }
+    .double-input{
+      display: flex;
+      flex-direction: row;
+    }
+    .double-input > div{
+      width: 45%;
+      margin-right: 7px;
+    }
+    .search-button{
+      background-color: #E16223;
+      padding: 10px 80px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: .5s;
+      font-family: 'Mallanna', sans-serif;
+    }
+    .search-button:hover{
+      background-color: green;
+    }
+    .search-button-cont{
+      margin-top: 20px;
+    }
+    .search-flight{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: -35px;
+    }
+    .input-class{
+      padding: 9px 0px;
+      border-radius: 5px;
+      text-indent: 20px;
+      width: 100%;
+    }
+    .input-class::placeholder{
+      color: #000000;
+      font-size: 1rem;
+    }
+    .s-item{
+      margin-bottom: 10px;
+    }
+    .s-item label{
+      color: white;
+      font-size: .8rem;
+    }
+    
     .wrap-search-area {
       margin-top: 1px;
   }
     .radio-item{
-      font-size: .8rem;
+      font-size: .6rem;
     }
     .basic-slide + label {
       position: absolute;
@@ -598,9 +668,10 @@ coun span{
       transition: all .3s ease-in-out;
     }
     .footer1-div{
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       line-height: 1.5rem;
+      padding-left: 20px;
     }
     .user-container{
       display: flex;
@@ -610,9 +681,9 @@ coun span{
     .div-for-button{
       display: none;
     }
-  .checkbox-container{
-      width: 70%;
-      padding: 30px;
+   .checkbox-container{
+      width: 98%;
+      padding: 3px 5px;
       padding-top: 15px;
     }
     .bg-title{
@@ -645,7 +716,7 @@ coun span{
     .tab-container .tab{
     color: #ffffff;
     background-color: #ee5e08;
-    margin-right: 1rem;
+    margin-right: .3rem;
     font-size: 1rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -661,7 +732,7 @@ coun span{
       justify-content: space-between;
       align-items: flex-end;
       margin-bottom: 0;
-      padding-left: 12px;
+      padding-left: 3px;
     }
     .box{
       padding-left: 0;
@@ -669,20 +740,21 @@ coun span{
     }
     .radio-box{
       display: flex;
+      padding-left: 30px;
     }
     .form-wrapper{
       display: flex;
       flex-direction: column;
-      width: 75%;
+      padding: 0;
+      margin: 0;
     }
     .input-button{
       display: none;
     }
     .search-area{
       background-color: #062369;
-      border-radius: 9px;
-      width: 100%;
-      height: 100vh;
+      width: 96%;
+      height: 80vh;
     }
     .bg-title{
       display: none;
